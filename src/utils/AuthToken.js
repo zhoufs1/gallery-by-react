@@ -47,7 +47,7 @@ function getJssdk(url,Params) {
             console.log(JSData.data);
             console.log('authToken加载wx.config')
             setTimeout(function () {
-                wx.config({
+                window.wx.config({
                     debug: false,
                     appId: JSData.data.appid,
                     timestamp: JSData.data.timestamp,
