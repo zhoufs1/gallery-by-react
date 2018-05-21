@@ -1,5 +1,4 @@
 /**
- * 微信白名单路由
  * Created by zhoufs1 on 2018/4/10.
  */
 import React from 'react';

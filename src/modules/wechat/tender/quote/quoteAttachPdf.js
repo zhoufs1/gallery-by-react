@@ -1,13 +1,11 @@
 /**
- * 报价详情的附件查看的pdf
- * Created by yonyou_zhuyhz on 2018/4/26.
+ * 附件查看的pdf
  */
 import React from 'react';
 import 'common/css/supplier.less';
 import DataUtil from 'utils/DataUtil';
 import PDF from '../pdf/PDF';
 import Viewer from '../pdf/Viewer';
-// let url = window.EnvConfig.ADDR,quotePdfSrc;
 
 class attachListPdf extends React.Component {
     constructor (props) {

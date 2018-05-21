@@ -1,6 +1,3 @@
-/**
- * Created by liulei on 2017/8/25.
- */
 import React, {Component} from 'react';
 import {List,ListView, Toast, NavBar, Card, WingBlank, WhiteSpace, Tabs, Badge} from 'antd-mobile';
 import SSList from '../../components/list/list';

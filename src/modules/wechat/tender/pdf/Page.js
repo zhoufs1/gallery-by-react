@@ -1,6 +1,3 @@
-/**
- * Created by yonyou_zhuyhz on 2018/4/27.
- */
 import React from 'react';
 import PDF from './PDF'
 

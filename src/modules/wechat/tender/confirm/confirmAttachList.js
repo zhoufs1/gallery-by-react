@@ -1,7 +1,3 @@
-/**
- * 定标详情的附件查看
- * Created by yonyou_zhuyhz on 2018/4/25.
- */
 import React from 'react';
 import DataUtil from 'utils/DataUtil';
 import 'common/css/supplier.less';

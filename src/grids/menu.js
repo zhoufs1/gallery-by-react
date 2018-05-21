@@ -59,7 +59,7 @@ class MenuGrid extends Component {
 
         return (
             <div className="menu-grid">
-                <NavBar title="筑云采" onLeftClick={this.onLeftClick}/>
+                <NavBar title="mobile-demos" onLeftClick={this.onLeftClick}/>
                 <WhiteSpace/>
                 <Grid hasLine={false} data={data} columnNum={3} onClick={this.clickGrid.bind(this)}/>
             </div>
