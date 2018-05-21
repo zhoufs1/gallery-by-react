@@ -1,0 +1,784 @@
+/**
+   //找供应商，报价详情，定标详情
+ * Created by yonyou_zhuyhz on 2018/4/2.
+ */
+
+
+//找供应商
+
+@color: #fff;
+@ziti:PingFangSC-Semibold;
+@ziti2:PingFangSC-Regular;
+@font-face {
+  font-family: 'iconfont';
+  src: url('./iconfont/iconfont.eot');
+  src: url('./iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('./iconfont/iconfont.woff') format('woff'),
+  url('./iconfont/iconfont.ttf') format('truetype'),
+  url('./iconfont/iconfont.svg#iconfont') format('svg');
+}
+*{
+  -webkit-tap-highlight-color: transparent;
+}
+ul,li{ padding:0;margin:0;list-style:none}
+//* { touch-action: none; }
+//搜索框
+.am-search {
+  padding: 0 0.2rem !important;
+  height: 0.3499rem !important;
+  background-color: @color !important;
+}
+.am-search-input {
+  background: rgba(240, 240, 245, 1) !important;
+  border-radius: 0.04rem;
+  height: 0.35rem;
+}
+.am-search-input .am-search-synthetic-ph {
+  height: 0.35rem;
+  line-height: 0.35rem;
+}
+
+//找供应商列表
+.sup-box {
+  background-color: @color;
+  padding: 0.1067rem 0.2667rem 0;
+  .box-content {
+    border-top: 1px solid rgba(215, 220, 230, 1);
+    padding-top: 0.1133rem;
+    cursor:pointer;
+    .box-title {
+      height:0.2667rem;
+      font-size:0.2rem;
+      font-family:@ziti;
+      color:rgba(0,145,250,1);
+      line-height:0.2667rem;
+      padding-right: 0.1333rem;
+      vertical-align: text-bottom;
+    }
+    .row1 {
+      padding-bottom: 0.1rem;
+    }
+    .row2 {
+      padding-bottom: 0.0667rem;
+      float: left;
+      width: 100%;
+    }
+    .row3 {
+      padding-bottom: 0.1rem;
+      float: left;
+      width: 100%;
+    }
+    .row4 {
+      padding-bottom: 0.1rem;
+    }
+    .lei {
+      display: inline-block;
+      color: @color;
+      width: 0.2667rem;
+      height: 0.2667rem;
+      line-height: 0.2667rem;
+      text-align: center;
+      margin-right: 0.0667rem;
+      vertical-align: text-bottom;
+    }
+    .box-company {
+      width: calc(19% - 0.2666rem);
+      float: left;
+      font-size: 0.1733rem;
+      font-family: @ziti;
+      color: rgba(170, 175, 185, 1);
+      line-height: 0.24rem;
+      padding-right: 0.1666rem;
+    }
+    .box-city {
+      width: 75.3%;
+      float: left;
+      font-size: 0.1733rem;
+      font-family: @ziti;
+      color: rgba(65, 70, 85, 1);
+      line-height: 0.24rem;
+      word-wrap: break-word;
+    }
+    .box-view {
+      height: 0.2266rem;
+      font-size: 0.16rem;
+      font-family: @ziti;
+      color: rgba(170, 175, 185, 1);
+      line-height: 0.2266rem;
+      padding-right: 0.3rem;
+    }
+    .box-storage {
+      height: 0.2266rem;
+      font-size: 0.16rem;
+      font-family: @ziti;
+      color: rgba(170, 175, 185, 1);
+      line-height: 0.2266rem;
+    }
+  }
+}
+//列表五类 字的颜色
+.lei-mat {
+  background: #ff393f;
+}
+.lei-dev {
+  background: #ffcb1f;
+}
+.lei-lab {
+  background: #1ed078;
+}
+.lei-maj {
+  background: #0e91f9;
+}
+.lei-oth {
+  background: #465fd8;
+}
+
+//找供应商卡片
+.card-top {
+  padding: 4.267% 5.333%;
+  background: @color;
+  //border-bottom: 1px solid rgba(215, 220, 230, 1);
+  margin-bottom: 0.26667rem;
+  .card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 0.266667rem;
+    font-size: 0.2rem;
+    font-family: @ziti;
+    color: rgba(65, 70, 85, 1);
+    line-height: 0.266667rem;
+    padding-bottom: 0.06667rem;
+  }
+  .card-little-title {
+    height: 0.24rem;
+    font-size: 0.15rem;
+    font-family: @ziti;
+    color: rgba(65, 70, 85, 1);
+    line-height: 0.24rem;
+    padding-bottom: 0.02rem;
+    span {
+      height: 0.24rem;
+      font-size: 0.15rem;
+      font-family: AppleSystemUIFont;
+      color: rgba(255, 75, 80, 1);
+      line-height: 0.24rem;
+    }
+  }
+}
+
+.card-infor {
+  background: @color;
+  padding: 0 0.2333rem 0 0.2667rem;
+  .my-accordion .pad .am-accordion-content-box {
+    width: 100%;
+    height: auto;
+  }
+  .infor {
+    width: 100%;
+    line-height: 0.28rem;
+    font-size: 0.2rem;
+    font-family: @ziti;
+    color: rgba(65, 70, 85, 1);
+    .infor1 {
+      width: calc(35.85% - 0.1333rem);
+      float: left;
+      font-size: 0.173rem;
+      font-family: @ziti;
+      color: rgba(170, 175, 185, 1);
+      line-height: 0.32rem;
+      padding: 0 0.1333rem 0.0533rem 0;
+      text-align: right;
+    }
+    .infor2 {
+      width: 61.3%;
+      float: left;
+      font-size: 0.173rem;
+      font-family: @ziti;
+      color: rgba(65, 70, 85, 1);
+      line-height: 0.32rem;
+      padding: 0 0 0.0533rem;
+      word-wrap: break-word;
+    }
+    .infor3 {
+      width: calc(28.8% - 0.1333rem);
+    }
+    .infor4 {
+      width: 68.3%;
+    }
+    .infor5 {
+      width: calc(45% - 0.1333rem);
+    }
+    .infor6 {
+      width: 52%;
+    }
+    .first {
+      padding-top: 0.16rem;
+    }
+    //缩略图
+    .pic-box {
+      padding-top: 2.3534rem;
+      padding-bottom: 0.2133rem;
+      height: 1.8667rem;
+      position: relative;
+      .cache1,.cache2{
+        width:2.1467rem;
+        line-height: 0.4rem;
+        height: 0.4rem;
+        text-align: center;
+        z-index: 100;
+        position:absolute;
+        bottom: 0.2rem;
+        background:rgba(65,70,85,0.5);
+        font-size:0.1733rem;
+        font-family:PingFangSC-Semibold;
+        color:rgba(255,255,255,1);
+      }
+      .cache1{
+        left:0.0067rem;
+      }
+      .cache2{
+        right:0;
+      }
+    }
+  }
+}
+//没有更多数据
+.noMore {
+  padding-top: 0.2667rem;
+  text-align: center;
+  height: 0.2667rem;
+  font-size: 0.1733rem;
+  font-family: @ziti2;
+  color: rgba(170, 175, 185, 1);
+  line-height: 0.2667rem;
+  padding-bottom: 0.2667rem;
+}
+
+//去掉很多莫名的上下线
+.am-accordion .am-accordion-item .am-accordion-content .am-accordion-content-box::after {
+  border-bottom: none !important;
+  border-top: none !important;
+}
+html:not([data-scale]) .am-accordion .am-accordion-item .am-accordion-content .am-accordion-content-box::after,
+html:not([data-scale]) .am-accordion::before {
+  height: 0;
+}
+html:not([data-scale]) .am-accordion .am-accordion-item .am-accordion-header{
+  border-bottom: 1px solid #ddd;
+}
+html:not([data-scale]) .am-accordion .am-accordion-item .am-accordion-header::after {
+  height: 0;
+}
+.am-accordion .am-accordion-item .am-accordion-content .am-accordion-content-box {
+  border-bottom: none;
+}
+.am-accordion {
+  border-top: none !important;
+}
+.am-search-input input[type="search"] {
+  height: 0.35rem;
+}
+.am-search-input .am-search-clear {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+//搜索页面
+.search-list {
+  background: @color;
+  padding: 0.4rem 1rem 0;
+  font-family: @ziti2;
+  color: rgba(170, 175, 185, 1);
+  .search-title {
+    height: 0.2667rem;
+    font-size: 0.1867rem;
+    font-family: @ziti2;
+    line-height: 0.2667rem;
+    text-align: center;
+    padding-bottom: 0.4rem;
+  }
+  .search-lei-row1, .search-lei-row2 {
+    //color: rgba(0, 145, 250, 1);
+    padding-bottom: 0.4rem;
+    height: 0.2933rem;
+    font-size: 0.2133rem;
+    font-family: @ziti2;
+    line-height: 0.2933rem;
+    .search-mat, .search-dev, .search-maj {
+      cursor: pointer;
+      float: left;
+      padding-right: 0.8rem;
+    }
+    .search-lab, .search-oth {
+      cursor: pointer;
+    }
+  }
+  .search-lei-row2 {
+    padding-bottom: 0;
+    .search-maj {
+      padding-left: 0.68rem;
+    }
+  }
+}
+
+//缩略图放大后，去掉全屏按钮
+.pswp--supports-fs .pswp__button--fs {
+  display: none !important;
+}
+//缩略图放大后，去掉分享朋友圈按钮
+.pswp__button--share {
+  display: none !important;
+}
+//缩略图放大后，标题居中
+.pswp__caption__center {
+  text-align: center !important;
+}
+//缩略图放大后，标题距离底部距离
+.pswp__caption {
+  bottom: 1.6rem !important;
+}
+.pswp__zoom-wrap {
+
+}
+
+.card-logo {
+  height: 2.1334rem;
+  width: 100%;
+  text-align: center;
+  img {
+    height:2.133rem;
+  }
+}
+
+//.haha {
+//  height: 1.4rem;
+//  //width: 2.1334rem;
+//  li{
+//    float:left;
+//    width:47%;
+//    padding-right:0.2rem;
+//    &.oushu{
+//      padding-right:0;
+//    }
+//  }
+//}
+
+
+
+//报价
+.quoteCard-top {
+  padding: 0 0.2333rem 0 0.2667rem;
+  background: @color;
+  text-align: center;
+  .quoteCard-title {
+    padding: 3.267% 0;
+    //border-bottom: 1px solid #ddd;
+    .quoteCard-title-title {
+      height: 0.24rem;
+      font-size: 0.2rem;
+      font-family: @ziti;
+      color: rgba(65, 70, 85, 1);
+      line-height: 0.24rem;
+    }
+  }
+}
+.quoteCard-infor {
+  background: @color;
+  padding: 0 0.2333rem 0 0.2667rem;
+  .infor {
+    width: 100%;
+    line-height: 0.28rem;
+    font-size: 0.2rem;
+    font-family: @ziti;
+    color: rgba(65, 70, 85, 1);
+    .infor1 {
+      width: calc(30.85% - 0.1333rem);
+      float: left;
+      font-size: 0.173rem;
+      font-family: @ziti;
+      color: rgba(170, 175, 185, 1);
+      line-height: 0.32rem;
+      padding: 0 0.1333rem 0.0533rem 0;
+      text-align: right;
+    }
+    .infor2 {
+      width: 66.3%;
+      float: left;
+      font-size: 0.173rem;
+      font-family: @ziti;
+      color: rgba(65, 70, 85, 1);
+      line-height: 0.32rem;
+      padding: 0 0 0.0533rem;
+      word-wrap: break-word;
+      span {
+        height: 0.24rem;
+        font-size: 0.23rem;
+        font-family: AppleSystemUIFont;
+        color: rgba(255, 75, 80, 1);
+        line-height: 0.24rem;
+      }
+    }
+    .first {
+      padding-top: 0.16rem;
+    }
+  }
+  //需求清單
+  .require-list {
+    width: 100%;
+    height: auto;
+    ul {
+      height:0.45rem;
+      line-height: 0.45rem;
+      &.title{
+        background: #d6d6d6;
+      }
+      li{
+        word-break: break-all;
+        float:left;
+        text-align: center;
+        width: 20%;
+        font-size: 0.173rem;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+        overflow:hidden;
+      }
+    }
+    p.tip{
+      color:lightgrey;
+      font-size: 0.17rem;
+      line-height: 0.45rem;
+      height: 0.45rem;
+    }
+  }
+  //供应商报价
+  .quote-list {
+    width: 100%;
+    height: auto;
+    ul {
+      margin-bottom: 0.14rem;
+      height:0.26rem;
+      line-height: 0.26rem;
+      clear:both;
+      display: table;
+      width: 100%;
+      .attach-mgr-color {
+        color:#0000ff;
+      }
+      li {
+        word-break: break-all;
+        display: table-cell;
+        vertical-align: middle;
+        float: left;
+        text-align: center;
+        width: 25%;
+        font-size: 0.173rem;
+        &.quote-list-left {
+          text-align: left;
+        }
+      }
+      .quote-list-first{
+        width: 33%;
+      }
+      .quote-list-second{
+        width: 25%;
+      }
+      .quote-list-third{
+        width: 22%;
+      }
+      .quote-list-fourth{
+        width: 20%;
+      }
+    }
+    ul.title {
+      height:0.45rem;
+      display: table;
+      width: 100%;
+      line-height: 0.45rem;
+      background: #d6d6d6;
+      li{
+        word-break: break-all;
+        display: table-cell;
+        vertical-align:middle;
+        float:left;
+        text-align: center;
+        width: 25%;
+        font-size: 0.173rem;
+      }
+      .quote-list-first{
+        width: 33%;
+      }
+      .quote-list-second{
+        width: 25%;
+      }
+      .quote-list-third{
+        width: 22%;
+      }
+      .quote-list-fourth{
+        width: 20%;
+      }
+    }
+  }
+  //附件查看
+  .list-attach-mgr {
+    font-size: 0.17rem;
+    line-height: 0.28rem;
+    font-family: PingFangSC-Semibold;
+    color: #000;
+    padding: 0.1rem 0.15rem 0.15rem;
+    span{
+      float: right;
+      width: 0.2rem;
+      height: 0.3rem;
+      text-align: right;
+      .arrowNext {
+        width: 0.1rem;
+        height: 0.10rem;
+      }
+    }
+  }
+  //返回顶部
+  .top {
+    position: fixed;
+    bottom: 0.34rem;
+    right: 0.06rem;
+    .fill {
+      width: 0.3rem;
+      height: 0.4rem;
+    }
+  }
+}
+
+//requireList，需求清单列表放大页面
+.require-list-box {
+  width:100%;
+  font-size: 0.1733rem;
+  position: relative;
+  .require-list-box-title{
+    text-align: center;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.2rem;
+  }
+  span{
+    position: absolute;
+    top:0;
+    right:0.1rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    color:#315bff;
+  }
+  ul {
+    margin-bottom: 0.1rem;
+    height:0.26rem;
+    line-height: 0.26rem;
+    clear:both;
+    display: table;
+    width: 92%;
+    padding: 0 4%;
+    li {
+      word-break: break-all;
+      display: table-cell;
+      vertical-align: middle;
+      float: left;
+      text-align: center;
+      width: 20%;
+      font-size: 0.173rem;
+      &.require-list-left {
+        text-align: left;
+      }
+    }
+  }
+  ul.title {
+    height:0.5rem;
+    display: table;
+    width: 92%;
+    line-height: 0.5rem;
+    background: #d6d6d6;
+    li{
+      word-break: break-all;
+      display: table-cell;
+      vertical-align:middle;
+      float:left;
+      text-align: center;
+      width: 20%;
+      font-size: 0.173rem;
+    }
+  }
+}
+
+//附件管理查看放大页面
+.attach-mgr {
+  height: auto;
+  background: #fff;
+  .click-active {
+    border-bottom: 1px solid #0066cc;
+  }
+  .click-is-show {
+    display: block;
+  }
+  .click-not-show {
+    display: none;
+  }
+  ul.title {
+    padding: 0 20%;
+    height: 0.55rem;
+    width: 60%;
+    font-size: 0.173rem;
+    li {
+      height: 0.55rem;
+      line-height: 0.55rem;
+      float: left;
+      width: 50%;
+      text-align: center;
+    }
+  }
+  .attach-mgr-pic {
+    clear: both;
+    .pswp-gallery {
+      float: left;
+      width: 94%;
+      padding: 0 3%;
+    }
+  }
+  .attach-mgr-doc{
+    ul {
+      height: auto;
+      width: 100%;
+      font-size: 0.173rem;
+      li {
+        height: 1rem;
+        float: left;
+        width: 92%;
+        position: relative;
+        border-top:1px solid #e5e5e5;
+        background: #fff;
+        padding:0 4%;
+        p{
+          position:absolute;
+          clear: both;
+          &.fileName{
+            top: 0.15rem;
+            left: 0.35rem;
+            width: 65%;
+            height: 0.5rem;
+            color: #000;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp:2;
+          }
+          &.size{
+            bottom:0.1rem;
+            left:0.35rem;
+            width: 70%;
+            height: 0.2rem;
+            color: #5c5d61;
+          }
+          &.date{
+            top: 0.15rem;
+            right:0.1rem;
+            width: 24%;
+            height: 0.5rem;
+            color: #5c5d61;
+          }
+        }
+      }
+    }
+  }
+}
+
+//定标页面
+p.supplierName {
+  color: #000;
+  font-size:0.1733rem;
+  height: 0.4rem;
+}
+
+.confirm-list-box {
+  width:100%;
+  font-size: 0.1733rem;
+  position: relative;
+  .confirm-list-box-title{
+    text-align: center;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.2rem;
+    border-bottom: 1px solid #d5d5d5;
+  }
+  span{
+    position: absolute;
+    top:0;
+    right:0.1rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    color:#315bff;
+  }
+  .confirm-title {
+    text-align: left !important;
+    padding-left: 4%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+  }
+  ul {
+    height: 0.26rem;
+    line-height: 0.26rem;
+    margin-bottom: 0.1rem;
+    clear: both;
+    display: table;
+    width: 92%;
+    padding: 0 4%;
+    li{
+      word-break: break-all;
+      float:left;
+      text-align: center;
+      width: 14.2%;
+      font-size: 0.173rem;
+      &.require-list-left {
+        text-align: left;
+      }
+    }
+    &.title{
+      display: table;
+      width: 92%;
+      background: #d6d6d6;
+      li{
+        float:left;
+        text-align: center;
+        width: 14.2%;
+        font-size: 0.173rem;
+        padding: 0.1rem 0;
+      }
+    }
+
+  }
+  p.tip{
+    color:lightgrey;
+    font-size: 0.17rem;
+    line-height: 0.45rem;
+    height: 0.45rem;
+  }
+}
+
+.noData {
+  width: 100%;
+  padding-top: 0.3rem;
+  font-size: 0.2rem;
+  text-align: center;
+}
+
+
+//报价和定标的清单列表页面，强制横屏
+#content,#content2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  div{
+    margin: auto;
+    text-align: center;
+  }
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 97.2px;">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="theme-color" content="#000000">
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
+    <link href="https://cdn.bootcss.com/antd-mobile/2.1.3/antd-mobile.css" rel="stylesheet">
+    <script src="//as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+    <script>
+        if ('addEventListener' in document) {
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        }
+        if(!window.Promise) {
+            document.writeln('<script src="//as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+        }
+    </script>
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>筑云采</title>
+</head>
+<body>
+<noscript>
+    You need to enable JavaScript to run this app.
+</noscript>
+<div id="root"></div>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+<data>
+    <!-- 以下是配置外部化动态写入-->
+    <script>
+        window.EnvConfig = {
+            YYLIB_BASEHOST: 'https://dev.yonyouccs.com',
+            ADDR: 'http://127.0.0.1:8080',
+            // 后端服务项目名
+            ROOT_PATH: '/icop-purchase-web',
+            WWK_PATH: '/icop-schedule-web',
+            FILE_PATH: '/icop-file',
+            //移动平台地址例如：https://dev.yonyouccs.com
+            MAURL: 'https://dev.yonyouccs.com',
+            // 参照注册服务地址
+            REF_SERVER_URL: 'https://dev.yonyouccs.com',
+            // Portal首页地址
+            URL_HOME_PORTAL: 'https://dev.yonyouccs.com/icop-workbench/#workindex',
+            URL_WORKBENCH: 'https://dev.yonyouccs.com/icop-workbench/getWorkbenchCookie'
+        }
+    </script>
+</data>
+</body>
+<script>
+    const script = document.createElement("script");
+    script.src = window.EnvConfig.MAURL + '/maservlet/html/yyplus/yyjzh5plus.js';
+    document.body.appendChild(script);
+function onBridgeReady() {
+    if(window.location.hash.substring(0, 8)!=='#/notice'){
+        WeixinJSBridge.call('hideOptionMenu');
+    }
+}
+
+if (typeof WeixinJSBridge == "undefined") {
+    if (document.addEventListener) {
+        document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+    } else if (document.attachEvent) {
+        document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+        document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+    }
+} else {
+    onBridgeReady();
+}
+
+
+</script>
+
+</html>

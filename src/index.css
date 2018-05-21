@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+a, button, input, div, span {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.am-list-item .am-input-control input {
+    text-overflow: clip;
+}
+
+.am-list-item .am-input-control input:disabled, .am-list-item .am-input-control input[disabled] {
+    color: #888;
+    -webkit-text-fill-color: #888;
+    -webkit-opacity: 1;
+    opacity: 1;
+}
+
+.am-toast {
+    z-index: 6000 !important;
+}
+
+.am-picker-popup {
+    z-index: 5700 !important;
+}
+
+.am-picker-popup-mask {
+    z-index: 5600 !important;
+}
+
+.am-picker-popup-body {
+    z-index: 5750 !important;
+}
+
+.am-picker-popup-wrap {
+    z-index: 5650 !important;
+}
+
+.animated {
+    min-height: 100vh;
+}
+
+.am-list-item.am-list-item-active {
+    background-color: #fff !important;
+}

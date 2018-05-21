@@ -1,0 +1,272 @@
+body {
+    font-size: 0.3rem;
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.list-special .am-list-body div:not(:last-child) .am-list-line:after {
+    border-bottom: none;
+}
+.list-special .am-list-body{
+    border-top:none;
+    background-color: #f8f8f8;
+    /*!*新增*!*/
+    /*padding: 0 0.3rem;*/
+    /*margin-top: 0.3rem;*/
+}
+
+.list-special .am-list-body:after{
+    border-bottom:none;
+}
+.list-special .extra-italic>em{
+    font-style: normal;
+}
+.list-special .extra-italic .italic-text{
+    font-size: 0.32rem;
+    color: #686868;
+    font-weight: 600;
+    margin-left: 0.05rem;
+    vertical-align: baseline;
+    font-style: italic;
+}
+
+/*.list-special .testssss{
+    padding-left: 0.3rem;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}*/
+
+.list-special .am-list-line-multiple{
+    min-height:1.6rem;
+    width: 100%;
+}
+.list-special .am-list-item{
+    /*margin-bottom: 0.3rem;*/
+    /*overflow: visible;*/
+}
+/*.list-special .over-brim .am-list-item{
+    overflow: visible
+}*/
+.list-special  .am-list-item .am-list-line .am-list-brief{
+    font-size: 0.25rem;
+    color: #666;
+}
+.list-special .am-list-item .am-list-line-multiple {
+    padding: 0.1rem 0.3rem 0.1rem 0;
+    overflow:visible;
+}
+.list-special {
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    padding: 0 0.3rem;
+    width: 100%;
+    overflow: hidden;
+    margin-top:0.3rem;
+
+}
+.list-special .am-list-extra .listItem-extra {
+    display: block;
+    height: 0.7rem;
+    width: auto;
+    max-width: 3.2rem;
+    line-height: 0.7rem;
+    padding: 0 0.1rem;
+    text-align: center;
+    border-radius: 0.7rem 0 0 0.7rem;
+    position: absolute;
+    right: 0;
+    font-size: 0.25rem;
+    font-style:normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.list-special .am-list-extra .listItem-extra-backgroundColor {
+    line-height: 0.4rem;
+    height: 0.4rem;
+    text-align: right;
+
+}
+
+.list-special .am-list-extra .listItem-extra-backgroundImg {
+    line-height: 0.5rem;
+    height: 0.5rem;
+    text-align: center;
+    margin-right: -0.1rem;
+
+
+}
+
+.list-special .am-list-item .extra-backgroundImg{
+    height: 0.6rem;
+    width: 2rem;
+    position: absolute;
+    right: 0;
+    top:0.2rem
+
+}
+
+.list-special .am-list-brief img {
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-right: 0.1rem;
+}
+.list-special .listBrief-desc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top:0.3rem
+}
+.list-special .am-list-item .am-list-line .am-list-brief{
+    color: #666;
+    width:100%;
+    font-size: 0.16rem;
+     height: 0.3rem !important;
+     line-height: 0.3rem!important;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: PingFangSC-Regular;
+}
+/*.list-special .am-list-brief .iconfont{
+    vertical-align: middle;
+    transform:translateY(5%);
+    font-size: 0.5rem;
+}*/
+.list-special  .am-icon-icon-biaoqian{
+    position:absolute;
+    right:-0.095rem;
+    top:0.2rem;
+    width: 1.8rem;
+    height: 0.65rem;
+}
+.list-special .listBrief-desc{
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*.list-special .brief-location{
+    position: absolute;
+}*/
+.list-special .am-list-item .am-list-line .am-list-content{
+    overflow: hidden;
+    width: 100%;
+}
+.brief-myExtra{
+    position:absolute;
+    right:0.85em
+}
+.am-list-footer .weui-loading{
+    width: 0.6rem;
+    height: 0.6rem;
+}
+.am-list-footer .weui-loading {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+/*
+.list-brief-decs{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}*/
+/*后加*/
+.list-special{
+    padding:0
+}
+
+.am-pull-to-refresh-down .am-pull-to-refresh-indicator {
+    margin-top: -0.45rem;
+    font-size: .16rem;
+}
+
+.am-pull-to-refresh-indicator {
+    color: grey;
+    text-align: center;
+    height: 0.45rem;
+}
+
+.list-special .am-list{
+    width: 100%;
+}
+
+.single-line{
+    position:absolute;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+html:not([data-scale]) .list-special .am-list-body::before{
+    height: 0;
+}
+
+.am-list-item .am-list-thumb:first-child {
+    margin-right: .3rem;
+    margin-left:17px ;
+}
+
+.list-specials{
+    padding:0
+}
+
+.list-specials .am-list{
+    width: 100%;
+}
+
+
+/*2017/11/22后加的样式*/
+.list-specials .am-list-body{
+    border-top:none;
+    background-color: #F0F4F6;
+    /*新增*/
+    /*padding: 0 0.3rem;
+    margin-top: 0.3rem;*/
+}
+
+/*.list-specials .am-list-item{
+    !* margin-bottom: 0.3rem;*!
+    !*overflow: visible;*!
+}*/
+
+.list-specials .am-list-item .am-list-line-multiple {
+    padding: 0.3rem 0.3rem 0.3rem 0;
+    overflow:visible;
+   
+}
+.list-specials .am-list-item:last-child .am-list-line-multiple {
+    border-bottom: none;
+}
+
+.list-specials .am-list-extra .listItem-extra {
+    display: block;
+    height: 0.7rem;
+    width: auto;
+    max-width: 3.2rem;
+    line-height: 0.7rem;
+    padding: 0 0.1rem;
+    text-align: center;
+    border-radius: 0.08rem;
+    position: absolute;
+    right: 0.2rem;
+    font-size: 0.25rem;
+    font-style:normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+html:not([data-scale]) .list-specials .am-list-body div:not(:last-child) .am-list-line{
+    border-bottom: 1px solid #d5d5d5;
+}
+
+html:not([data-scale]) .list-specials .am-list-body::before{
+    height: 0;
+}

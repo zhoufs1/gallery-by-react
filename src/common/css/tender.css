@@ -1,0 +1,335 @@
+.notice-tab {
+    height: 44px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+    line-height: 44px;
+}
+
+.list-special .am-list-item .am-list-line .am-list-content {
+    overflow: hidden;
+    width: 100%;
+    line-height:0.4rem;
+    text-align: left;
+    font-size: 0.1867rem;
+    font-family: PingFangSC-Regular;
+    color: rgba(65, 70, 85, 1);
+}
+
+html:not([data-scale]) .am-list-body div:not(:last-child) .am-list-line::after {
+    height: 0;
+}
+
+.am-list-item .am-list-line .am-list-content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: #000;
+    font-size: 0.17rem;
+    line-height: 1.5;
+    text-align: center;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 0.07rem;
+    padding-bottom: 0.07rem;
+}
+
+.item-line {
+    width: 100%;
+    border-bottom: 0.014rem solid #D7DCE6;
+}
+
+.empty-line {
+    text-align: center;
+    font-size: 0.1734rem;
+    padding-top: 0.2667rem;
+    font-family:PingFangSC-Regular;
+    color:rgba(170,175,185,1);
+    line-height:0.2667px;
+}
+
+html:not([data-scale]) .am-tabs-default-bar-top .am-tabs-default-bar-tab::after {
+    height: 0;
+}
+
+html:not([data-scale]) .am-list-body::after{
+    height: 0;
+}
+
+.list-special .am-list-item .am-list-line .am-list-brief {
+    color: #666;
+    width: 100%;
+    font-size: 0.16rem;
+    height: 0.3467rem;
+    line-height: 0.3467rem;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family:PingFangSC-Regular;
+}
+
+.am-list-item img {
+    width: 1.467rem;
+    height: 1.467rem;
+    vertical-align: middle;
+}
+
+.am-list-item .am-list-thumb:first-child {
+    margin-right: .28rem;
+    margin-left: 0.1067rem;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+.tender-title {
+    font-size: 0.22rem;
+    font-family: 'Microsoft YaHei',PingFangSC-Medium;
+    color: rgba(0, 145, 250, 1);
+    line-height: 0.2934rem;
+    height: 0.2934rem;
+    /*text-align: center;*/
+    margin-bottom: 0.5467rem;
+    padding-top: 0.1867rem;
+}
+
+.tender-form-items {
+    padding-left: 8%;
+}
+
+.tender-form-row1 {
+    clear:both;
+    font-size: 0.1867rem;
+    font-family:'Microsoft YaHei', PingFangSC-Regular;
+    color: rgba(127, 131, 146, 1);
+}
+
+.tender-card1 {
+    width: 100%;
+    margin-top: 0.1867rem;
+    padding-bottom: 0.84rem;
+    background: rgba(255, 255, 255, 1);
+}
+
+.tender-card2 {
+    width: 100%;
+    margin-top: 0.1867rem;
+    background: rgba(255, 255, 255, 1);
+    padding-bottom: 0.5rem;
+}
+
+.tender-card2 .content {
+    font-size:0.1867rem;
+    font-family:PingFangSC-Regular;
+    color:rgba(127,131,146,1);
+    padding: 0.2267rem 0.24rem 0.3733rem 0.3067rem;
+    line-height: 0.35rem;
+}
+
+.tender-card3 {
+    width:100%;
+    height:0.6667rem;
+    position: fixed;
+    bottom: 0;
+    background:rgba(255,255,255,1);
+    box-shadow: 0 0 0.1067rem 0rem rgba(198,198,198,0.5);
+}
+
+.tender-card3 .bottom1 {
+    text-align: center;
+    height: 0.6667rem;
+    line-height: 0.6667rem;
+    font-size:0.16rem;
+    font-family:PingFangSC-Regular;
+    color:rgba(127,131,146,1);
+}
+
+.item-img{
+    position: relative;
+}
+
+.item-title {
+    position: absolute;
+    left: 0.0267rem;
+    top:0.0267rem;
+    width:0.5866rem;
+    height:0.2933rem;
+    background:rgba(59,193,255,1);
+    border-radius: 2px ;
+    font-size:0.1334rem;
+    font-family:PingFangSC-Regular;
+    color:rgba(255,255,255,1);
+    line-height:0.2933rem;
+    text-align: center;
+}
+
+.win-title {
+    float: left;
+}
+
+.win-title-content{
+    height: 1.1733rem;
+}
+
+.win-title-p1{
+    height:0.2933rem;
+    font-size: 0.2133rem;
+    font-family:PingFangSC-Medium;
+    color:rgba(59,59,59,1);
+    line-height:0.2933rem;
+    padding-top: 0.3067rem;
+}
+
+.win-title-p2{
+    height:0.2267rem;
+    font-size:0.16rem;
+    font-family:PingFangSC-Regular;
+    color:rgba(127,131,146,1);
+    line-height:0.2267rem;
+    padding-top: 0.0667rem;
+    padding-left: 1.28rem;
+}
+
+.win-card1 {
+    width: 100%;
+    margin-top: 0.2rem;
+    background: rgba(255, 255, 255, 1);
+    height: 4.25rem;
+}
+
+.win-card2 {
+    width: 100%;
+    margin-top: 0.2rem;
+    padding-bottom: .56rem;
+    background: rgba(255, 255, 255, 1);
+}
+
+.win-img {
+    width: 0.96rem;
+    height: 0.96rem;
+    float: left;
+    padding-top: 0.2rem;
+    padding-left: 0.44rem;
+    padding-right: 0.5733rem;
+}
+
+.win-line {
+    width:4.2467rem;
+    height: 0.0133rem;
+    margin-left: 0.4267rem;
+    text-align: center;
+    background-color: gray;
+}
+
+.win-ul {
+    margin-top: 0.2667rem;
+    margin-left: 0.4533rem;
+}
+
+.win-li {
+    height:0.2667rem;
+    font-size:0.1867rem;
+    margin-bottom: 0.16rem;
+    font-family:PingFangSC-Regular;
+    color:rgba(127,131,146,1);
+    line-height:0.2667rem;
+}
+
+.win-li-i {
+    height:0.2667rem;
+    font-size:0.1867rem;
+    margin-bottom: 0.16rem;
+    font-family:PingFangSC-Regular;
+    line-height:0.2667rem;
+    color:rgba(9,149,251,1);
+}
+
+.win-content-title {
+    height:0.2667rem;
+    font-size:0.18667rem;
+    font-family:PingFangSC-Regular;
+    color:rgba(65,70,85,1);
+    line-height: 0.18667rem;
+    padding-top: 0.3067rem;
+    padding-left: 0.4533rem;
+}
+
+.win-content-box {
+    width:4.4rem;
+    margin-top: .1466rem;
+    margin-left: .3067rem;
+    height:0.5333rem;
+    background:rgba(250,250,250,1);
+}
+
+.win-table-item{
+    float: left;
+    text-align: center;
+    width: 25%;
+    height:0.5333rem;
+    font-size:0.16rem;
+    font-family:PingFangSC-Regular;
+    color:rgba(65,70,85,1);
+    line-height:0.5333rem;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    /*祖传三连*/
+}
+
+.win-content-box-child {
+    background: rgba(255, 255, 255, 1);
+    border-bottom: 0.014rem solid #D7DCE6;
+}
+
+.tender-form-row-title {
+    float: left;
+    padding-bottom: .1067rem;
+    line-height: .3267rem;
+}
+
+.tender-form-row-title-space {
+    letter-spacing: .09333rem;
+    float: left;
+    padding-bottom: .1067rem;
+    line-height: .3267rem;
+}
+
+
+.tender-form-row-content{
+    line-height: .3267rem;
+    padding-bottom: .1067rem;
+    float: left;
+    word-wrap: break-word;
+    width: 3.4rem;
+}
+
+.tender-form-line-color{
+    font-family:'Microsoft YaHei','PingFangSC-Regular';
+    color:rgba(65,70,85,1);
+}
+
+.tender-img-left {
+    width: .36rem;
+    padding-top: .1333rem;
+    margin-left: 1.56rem;
+    margin-right: .16rem;
+    float: left;
+}
+
+.tender-img-right {
+    width: .36rem;
+    float: left;
+    padding-top: .1333rem;
+    margin-left: .16rem;
+
+}
+
+
+.tender-title-content {
+    float: left;
+}
