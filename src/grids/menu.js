@@ -38,22 +38,10 @@ class MenuGrid extends Component {
                 url: '/demo2',
             },
             {
-                icon: DateBasic,
-                text: '供应商',
-                url: '/suplist',
-            },{
                 icon: GroupProces,
                 text: '招标商机',
                 url: '/notice',
-            },{
-                icon: GroupProces,
-                text: '报价',
-                url: '/quote',
-            },{
-                icon: GroupProces,
-                text: '定标',
-                url: '/confirm',
-            },
+            }
 
         ];
 

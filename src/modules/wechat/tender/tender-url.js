@@ -3,8 +3,8 @@
  */
 import RestUrl from 'common/RestUrl';
 
-const ADDR = RestUrl.ADDR;
-const ROOT_PATH = RestUrl.ROOT_PATH;
+const ADDR = 'https://dev.yonyouccs.com';
+const ROOT_PATH = '/icop-purchase-web';
 
 export default {
     QUERY_LIST:ADDR + ROOT_PATH + '/openTender/queryListByWeChat', // 列表查询
