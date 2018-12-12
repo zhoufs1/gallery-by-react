@@ -2,7 +2,6 @@
   "name": "icop-purchase-mobile",
   "version": "1.5.0-SNAPSHOT",
   "private": true,
-  "homepage":"http://172.18.79.125:5000",
   "devDependencies": {
     "antd-mobile": "^2.1.3",
     "autoprefixer": "7.1.2",
