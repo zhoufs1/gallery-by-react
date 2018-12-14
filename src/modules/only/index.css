@@ -9,9 +9,9 @@
 .pic-details-demo {
     margin: 40px auto;
     box-shadow: 0 10px 40px #C7D7B5;
-    width: 60%;
+    width: 100%;
     min-width: 550px;
-    height: 420px;
+    height: 500px;
     background: #fff;
     border-radius: 6px;
     overflow: hidden;
