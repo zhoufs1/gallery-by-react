@@ -140,6 +140,8 @@
   },
   "dependencies": {
     "pdfjs-dist": "^2.0.489",
+    "prop-types": "^15.6.2",
+    "rc-queue-anim": "^1.6.10",
     "react-pdf": "^3.0.4",
     "react-photoswipe": "^1.3.0"
   }
