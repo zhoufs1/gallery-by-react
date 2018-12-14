@@ -41,6 +41,8 @@ export default class Home extends React.Component {
                 });
             }, 500);
         }
+        const audio = document.getElementById('audio');
+        setTimeout(audio.play(),8400);
 
     }
 
@@ -48,8 +50,6 @@ export default class Home extends React.Component {
         const children = [
             <Content0 id="content_0_0" key="content_0_0" isMobile={this.state.isMobile}/>,
             <Content1 id="content_1_0" key="content_1_0" isMobile={this.state.isMobile}/>,
-            <Content2 id="content_5_0" key="content_5_0" isMobile={this.state.isMobile}/>,
-            <Footer id="footer_0_0" key="footer_0_0" isMobile={this.state.isMobile}/>,
             // 导航和页尾不进入锚点区，如果需要，自行添加;
         ];
         return (

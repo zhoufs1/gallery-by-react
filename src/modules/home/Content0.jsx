@@ -107,63 +107,79 @@ class Content extends React.Component {
               key="title"
               id={`${props.id}-title`}
           >
-              <Texty delay={9000} style={{fontStyle: 'WenQuanYi Micro Hei', fontSize: '50px'}} enter={this.getEnter}
-                     leave={this.getEnter}>{this.state.show && '永远爱你'}</Texty>
+              <Texty delay={9000} style={{
+                  color: '#00CCFF',
+                  fontStyle: 'WenQuanYi Micro Hei',
+                  fontSize: '60px',
+                  fontWeight: '700',
+                  fontFamily: 'BiauKai'
+              }}
+                     enter={this.getEnter}
+                     leave={this.getEnter}>{this.state.show && "愛你哦~"}</Texty>
           </span>
                     <Texty delay={1000} style={{
                         height: '28px',
                         lineHeight: '28px',
                         fontStyle: 'WenQuanYi Micro Hei',
-                        fontSize: '13px'}}
+                        fontSize: '15px',
+                        color: '#D24D57'
+                    }}
                            enter={this.getEnter}
                            leave={this.getEnter}>{this.state.show && '我亲爱的宝宝呀'}</Texty>
                     <Texty delay={2000} style={{
                         height: '28px',
                         lineHeight: '28px',
                         fontStyle: 'WenQuanYi Micro Hei',
-                        fontSize: '13px'
+                        fontSize: '15px',
+                        color: '#26A65B'
                     }} enter={this.getEnter}
                            leave={this.getEnter}>{this.state.show && '往后余生，只想和你一起'}</Texty>
                     <Texty delay={3000} style={{
                         height: '28px',
                         lineHeight: '28px',
                         fontStyle: 'WenQuanYi Micro Hei',
-                        fontSize: '13px'
+                        fontSize: '15px',
+                        color: '#EB7347'
                     }} enter={this.getEnter}
-                           leave={this.getEnter}>{this.state.show && '说很多煽情的事'}</Texty>
+                           leave={this.getEnter}>{this.state.show && '说很多煽情的话'}</Texty>
                     <Texty delay={4000} style={{
                         height: '28px',
                         lineHeight: '28px',
                         fontStyle: 'WenQuanYi Micro Hei',
-                        fontSize: '13px'
+                        fontSize: '15px',
+                        color: '#AEDD81'
                     }} enter={this.getEnter}
-                           leave={this.getEnter}>{this.state.show && '做很多疯狂的话'}</Texty>
+                           leave={this.getEnter}>{this.state.show && '做很多疯狂的事'}</Texty>
                     <Texty delay={6000} style={{
                         height: '28px',
                         lineHeight: '28px',
                         fontStyle: 'WenQuanYi Micro Hei',
-                        fontSize: '13px'
+                        fontSize: '15px',
+                        color: '#00CCFF'
                     }} enter={this.getEnter}
                            leave={this.getEnter}>{this.state.show && '一日'}</Texty>
                     <Texty delay={7000} style={{
                         height: '28px',
                         lineHeight: '28px',
                         fontStyle: 'WenQuanYi Micro Hei',
-                        fontSize: '13px'
+                        fontSize: '15px',
+                        color: '#FC9D99',
                     }} enter={this.getEnter}
                            leave={this.getEnter}>{this.state.show && '两人'}</Texty>
                     <Texty delay={8000} style={{
                         height: '28px',
                         lineHeight: '28px',
                         fontStyle: 'WenQuanYi Micro Hei',
-                        fontSize: '13px'
+                        fontSize: '15px',
+                        color: '#D0D0D0'
                     }} enter={this.getEnter}
                            leave={this.getEnter}>{this.state.show && '三餐'}</Texty>
                     <Texty delay={9000} style={{
                         height: '28px',
                         lineHeight: '28px',
                         fontStyle: 'WenQuanYi Micro Hei',
-                        fontSize: '13px'
+                        fontSize: '15px',
+                        color: '#84AF9B'
                     }} enter={this.getEnter}
                            leave={this.getEnter}>{this.state.show && '四季'}</Texty>
                 </QueueAnim>
