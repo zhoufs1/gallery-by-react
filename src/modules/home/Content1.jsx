@@ -105,8 +105,123 @@ class Banner extends React.Component {
                 title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
                 content: '平淡是你，快乐是你',
                 button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                content: '',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                content: '',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },
+            {
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
+            },{
+                title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
+                button: 'Learn More',
             },
         ];
+        console.log(childrenData.length);
         const childrenToRender = childrenData.map((item, i) => {
             const title = item.title;
             const content = item.content;
@@ -166,7 +281,7 @@ class Banner extends React.Component {
                     style={{bottom: 40}}
                     key="icon"
                 >
-                    <Icon type="down"/>
+                    {/*<Icon type="down"/>*/}
                 </TweenOne>
             </OverPack>
         );
