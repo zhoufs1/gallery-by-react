@@ -14,6 +14,8 @@ const paths = require('./config/paths');
 const getClientEnvironment = require('./config/env');
 const pxtorem = require('postcss-pxtorem');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+//图片压缩plugin
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
@@ -110,6 +112,11 @@ module.exports = {
             // please link the files into your node_modules/ and let module-resolution kick in.
             // Make sure your source files are compiled, as they will not be processed in any way.
             new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
+            new ImageminPlugin({
+                pngquant: {
+                    quality: '75-85'
+                }
+            }),
         ],
     },
     module: {
@@ -345,6 +352,12 @@ module.exports = {
                 compress: {
                     warnings: false,
                     comparisons: false,
+                    // 删除所有的 `console` 语句，可以兼容ie浏览器
+                    drop_console: true,
+                    // 内嵌定义了但是只用到一次的变量
+                    collapse_vars: true,
+                    // 提取出出现多次但是没有定义成变量去引用的静态值
+                    reduce_vars: true,
                 }
             },
             sourceMap: shouldUseSourceMap,
