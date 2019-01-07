@@ -25,7 +25,7 @@ class Banner extends React.Component {
     };
 
     componentDidMount() {
-        this.time.call(this, 2018, 10, 5);
+        this.time.call(this, 2018, 9, 29);
     }
 
     render() {
@@ -35,7 +35,7 @@ class Banner extends React.Component {
         const childrenData = [
             {
                 title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
-                content: `我的寶寶呀，我們在一起已經${d}天${hour}小時${minute}分${second}秒了`,
+                content: `我的寶寶呀，我們在一起已經${d+1}天了`,
                 button: 'Learn More',
             }, {
                 title: '<img width="50%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
