@@ -221,7 +221,6 @@ class Banner extends React.Component {
                 button: 'Learn More',
             },
         ];
-        console.log(childrenData.length);
         const childrenToRender = childrenData.map((item, i) => {
             const title = item.title;
             const content = item.content;

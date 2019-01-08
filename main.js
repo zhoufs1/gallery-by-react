@@ -6,15 +6,16 @@ let win;
 
 function createWindow () {
     // 创建浏览器窗口。
-    win = new BrowserWindow({ width: 800, height: 600 })
+    win = new BrowserWindow({ width: 414, height: 736 })
 
     // 然后加载应用的 index.html。
-    win.loadFile('./public/index.html')
+    // win.loadFile('./public/index.html')
     // win.loadFile('./src/index.js')
-    // win.loadURL('/home')
+    //自己搭建的前端工程地址
+    win.loadURL('http://47.106.248.194/#/home');
 
     // 打开开发者工具
-    win.webContents.openDevTools()
+    // win.webContents.openDevTools();
 
     // 当 window 被关闭，这个事件会被触发。
     win.on('closed', () => {
