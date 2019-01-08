@@ -83,7 +83,7 @@
     "reg-clear": "npm config delete registry",
     "start": "node scripts/start.js",
     "start-electron": "electron .",
-    "build-electron": "electron-packager . kaoqin --platform=all --arch=all --icon=./public/favicon.ico --electron-version=^1.4.13 --out=./build/ --overwrite=true --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=dist --prune=true",
+    "build-electron": "electron-packager . 我们的相册 --platform=32 --arch=all --icon=./public/favicon.ico --electron-version=^1.4.13 --out=./build/ --overwrite=true --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=dist --prune=true",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
