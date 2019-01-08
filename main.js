@@ -9,9 +9,9 @@ function createWindow () {
     win = new BrowserWindow({ width: 800, height: 600 })
 
     // 然后加载应用的 index.html。
-    // win.loadFile('./public/index.html')
+    win.loadFile('./public/index.html')
     // win.loadFile('./src/index.js')
-    win.loadURL('/home')
+    // win.loadURL('/home')
 
     // 打开开发者工具
     win.webContents.openDevTools()
@@ -22,7 +22,6 @@ function createWindow () {
         // 通常会把多个 window 对象存放在一个数组里面，
         // 与此同时，你应该删除相应的元素。
         win = null
-        delete win
     })
 }
 
