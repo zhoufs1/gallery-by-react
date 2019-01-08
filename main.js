@@ -1,18 +1,28 @@
-const { app, BrowserWindow } = require('electron')
+const {app, BrowserWindow} = require('electron')
 
 // 保持对window对象的全局引用，如果不这么做的话，当JavaScript对象被
 // 垃圾回收的时候，window对象将会自动的关闭
 let win;
 
-function createWindow () {
+function createWindow() {
     // 创建浏览器窗口。
-    win = new BrowserWindow({ width: 414, height: 736 })
+    win = new BrowserWindow({
+        width: 414,
+        height: 736,
+        frame: true,//是否显示窗口边框
+        resizable: false,//可否缩放
+        movable: true //可否移动
+    })
 
     // 然后加载应用的 index.html。
     // win.loadFile('./public/index.html')
     // win.loadFile('./src/index.js')
     //自己搭建的前端工程地址
     win.loadURL('http://47.106.248.194/#/home');
+
+    //关闭浏览器自带的菜单
+    win.setMenu(null);
+    win.setMenuBarVisibility(false);
 
     // 打开开发者工具
     // win.webContents.openDevTools();
