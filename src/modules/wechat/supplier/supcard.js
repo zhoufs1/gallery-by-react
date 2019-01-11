@@ -1,6 +1,5 @@
 /**
- * 找供应商卡片
- * Created by yonyou_zhuyhz on 2018/4/2.
+ * Created by zhoufs1 on 2018/4/2.
  */
 import {Accordion} from 'antd-mobile';
 import React from 'react';

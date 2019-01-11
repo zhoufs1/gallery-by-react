@@ -1,6 +1,6 @@
 /**
  * 定标详情
- * Created by yonyou_zhuyhz on 2018/4/24.
+ * Created by zhoufs1 on 2018/4/24.
  */
 import {Accordion} from 'antd-mobile';
 import React from 'react';

@@ -1,6 +1,6 @@
 /**
  * 定标详情的定标情况清单
- * Created by yonyou_zhuyhz on 2018/4/26.
+ * Created by zhoufs1 on 2018/4/26.
  */
 import React from 'react';
 import DataUtil from 'utils/DataUtil';

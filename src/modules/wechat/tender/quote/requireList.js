@@ -1,6 +1,6 @@
 /**
  * 报价详情的需求清单
- * Created by yonyou_zhuyhz on 2018/4/25.
+ * Created by zhoufs1 on 2018/4/25.
  */
 import React from 'react';
 import DataUtil from 'utils/DataUtil';
