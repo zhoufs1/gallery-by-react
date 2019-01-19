@@ -32,12 +32,25 @@
 /***
  * 做过哪些浏览器兼容
  */
-//css3和h5新特性在部分浏览器或者低版本浏览器上不兼容，做法是在caniuse.com网站查找不同浏览器的兼容情况，加上内核前缀用于兼容。
-//兼容ie浏览器怪异盒子模型。
-//部分ui页面伪类hover或者动画或者时间等做防抖处理，防止闪屏，页面。
-//forEach、等JavaScript新特性在浏览器中不兼容，比较暴力的做法，重写window.Array.forEach()方法。
+// css3和h5新特性在部分浏览器或者低版本浏览器上不兼容，做法是在caniuse.com网站查找不同浏览器的兼容情况，加上内核前缀用于兼容。
+// 兼容ie浏览器怪异盒子模型。
+// 部分ui页面伪类hover或者动画或者时间等做防抖处理，防止闪屏，页面。
+// forEach、等JavaScript新特性在浏览器中不兼容，比较暴力的做法，重写window.Array.forEach()方法。
 
 /***
  * 做过哪些优化
  */
+// 1.单页面应用首屏加载，react组件进行按需加载。
+// 2.压缩图片，格式转换，有几个网站好用的压缩网站。
+// 3.第三方资源使用cdn服务器加速。
+// 4.http header加入缓存，设置缓存过期时间，if-modified-cence，cache-control:max-ages=1000或者nocache,
+// cache-control参数：（1）no-control,不缓存；（2）max-age缓存多长时间；（3）no-store,不进行缓存；
+// expires设定一个时间，当这个时间到来时更新，cache-Control和Expires同时使用时cache-Control优先级更大。
+// 5.适当使用cookie，localStore，sessionStore等缓存数据，避免重复的后端请求。
+// 6.css前置，js放底部。
+// 7.使用雪碧图合并图片，减少http访问量，UI制作一个大的UI雪碧图，我们使用的时候background-position定位所需图表的位置。
+// 8.使用css3动画，尽量不实用js动画,或使用canvas绘画。
+// 9.避免回流和重绘。
+// 10.图片懒加载。
+//
 
