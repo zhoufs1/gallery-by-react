@@ -12,6 +12,7 @@ import home from '../modules/home/index.jsx';
 import love from '../modules/home/words/love';
 import CanvasDemo from '../modules/demo/CanvasDemo';
 
+import Grail from '../modules/study/layout/grail/index.js';
 const App = asyncComponent(() => import('../App'));//主应用
 const MenuGrid = asyncComponent(() => import('../grids/menu'));//主菜单
 
@@ -21,6 +22,7 @@ let groupRouter = [
     <Route key="0010012" path="home" component={home}/>,
     <Route key="0010013" path="love" component={love}/>,
     <Route key="0010014" path="canvasDemo" component={CanvasDemo}></Route>,
+    <Route key="00222" path="grail" component={Grail}></Route>,
     ...demo,
     ...tender,
     ...sup,
