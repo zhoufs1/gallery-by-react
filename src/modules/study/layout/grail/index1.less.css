@@ -1,0 +1,30 @@
+/****
+**双飞翼布局
+ */
+
+.main,.left,.right {
+    float: left;
+    min-height: .4rem;
+}
+
+.main {
+    width: 100%;
+    background-color: red;
+}
+.child{
+    margin: 0 .6rem 0 .4rem;
+    min-height: .4rem;
+    background-color: #8c00ff;
+}
+
+.left {
+    width: .4rem;
+    background-color: #0bb20c;
+    margin-left: -100%;
+}
+
+.right {
+    width: .6rem;
+    background-color: #0e91f9;
+    margin-left: -.6rem;
+}

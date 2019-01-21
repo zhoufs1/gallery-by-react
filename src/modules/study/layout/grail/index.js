@@ -3,7 +3,7 @@
  */
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import './index.less';
+import './index1.less';
 
 export default class Grail extends Component {
     constructor() {
@@ -12,7 +12,9 @@ export default class Grail extends Component {
 
     render() {
         return <div className='container'>
-            <div className='main'></div>
+            <div className='main'>
+                <div className='child'></div>
+            </div>
             <div className='left'></div>
             <div className='right'></div>
         </div>
