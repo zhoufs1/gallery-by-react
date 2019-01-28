@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>游泳圈</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.content{
+			width: 500px;
+			height: 500px;
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			align-content: center;
+			flex-flow: row;
+		}
+		@keyframes proRotate{
+			0%{transform:perspective(400px) rotateY(180deg);} 
+			50%{transform:perspective(400px) rotateY(75deg);} 
+            100%{transform:perspective(400px) rotateY(0deg);} 
+		}
+		.cir1{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			border-radius: 50%;
+    		box-shadow: 5px 4px 9px 20px #888888;
+    		animation: proRotate 1s ease-in-out 300ms alternate none 1;
+		}
+		.cir2{
+			width: 60px;
+			height: 60px;
+			background-color: #fff;
+			border-radius: 50%;
+			left: -80px;
+			position: relative;
+			animation: proRotate 1s ease-in-out 300ms alternate none 1;
+		}
+		ul li{
+			list-style: none;
+			width: 100px;
+			height: 1px;
+			background-color: #888888;
+		}
+		ul {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			height: 100px;
+    		position: relative;
+    		left: -40px;
+    		top: -15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="cir1">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="cir2"></div>
+	</div>
+</body>
+</html>

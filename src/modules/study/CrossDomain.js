@@ -143,4 +143,91 @@
  */
 //用法，给某个特定ui组件一个ref值，通过this.refs可以查找到特定dom的自身属性。
 
+/*****
+ * __proto__
+ */
+//每一个对象都有这个__proto__属性，指向其构造函数的prototype。
+//方法的__proto__指向Function的prototype，对象的__proto__指向Object的prototype。
+
+/***
+ * 继承的实现方式
+ */
+function a() {
+    this.x = 1;
+}
+
+function b() {
+}
+
+//原型链继承,将父类的实例作为子类的原型
+b.prototype = new a();
+var ins = new b();
+console.log(ins.x);
+console.log(a.__proto__ == Function.prototype);
+console.log(ins.__proto__ == b.prototype);
+console.log(b.__proto__ == a.prototype)
+console.log(a.__proto__.constructor == Function);
+console.log(new Array());
+
+
+//构造函数继承
+function animal(name) {
+    this.name = name;
+}
+
+function dog() {
+    animal.call(this)
+}
+
+var d = new dog();
+d.name = 'hery';
+
+/****
+ * 手写promise
+ */
+
+const PENDING = 'pending';
+const RESOLVED = 'resolved';
+const REJECTED = 'rejected';
+
+function MyPromise(fn) {
+    const that = this;
+    that.state = PENDING;
+    that.value = null;
+    that.resolvedCallbacks = [];
+    that.rejectedCallbacks = [];
+
+    function resolve(value) {
+        if (that.state = PENDING) {
+            that.state = RESOLVED;
+            that.value = value;
+            that.resolvedCallbacks.map(callback => callback(that.value))
+        }
+    }
+
+    function reject(value) {
+        if (that.state = PENDING) {
+            that.state = REJECTED;
+            that.value = value;
+            that.rejectedCallbacks.map(callback => callback(that.value))
+        }
+    }
+}
+
+const that = this;
+(function test(a) {
+    this.a = a;
+
+    function t1(b) {
+        console.log(this.a + 3, this == that)
+    }
+
+    t1(1)
+})(3);
+
+console.log(this);
+
+
+
+
 
